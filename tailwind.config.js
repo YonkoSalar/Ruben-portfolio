@@ -3,7 +3,14 @@ module.exports = {
   content: [     "./src/**/*.{js,jsx,ts,tsx}",
 ],
   theme: {
-    extend: {},
+    extend: {
+      filter: {
+        'drop-shadow': 'drop-shadow(2px 4px 6px #4b7bec)',
+      },
+      
+      
+
+    },
   },
   plugins: [],
 }
