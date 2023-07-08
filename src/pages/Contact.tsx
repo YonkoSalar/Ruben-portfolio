@@ -91,7 +91,7 @@ function Contact() {
             {contactMethods.map((item, idx) => (
               <li key={idx} className="text-center">
                 <h4 className="text-lg font-medium">{item.title}</h4>
-                <div className="mt-3 flex items-center gap-x-3 justify-center" style={{minWidth: '250px'}}>
+                <div className="mt-3 flex items-center gap-x-3 justify-center pr-8" style={{minWidth: '250px'}}>
                   <div className="flex-none">{item.icon}</div>
                   <p>{item.contact}</p>
                 </div>

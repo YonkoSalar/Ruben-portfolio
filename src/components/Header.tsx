@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <nav className="relative z-10 bg-white px-8 py-4 md:flex-row">
+    <nav className="relative z-10 bg-white px-8 md:flex-row">
       <div className="flex flex-row justify-between items-center py-4">
         <div>
           <p className="text-2xl font-proxima font-semibold text-black">
