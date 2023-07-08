@@ -23,8 +23,6 @@ Navigate into the site’s directory and install the necessary packages.
 
 ```bash
     cd Ruben-portfolio
-=======
-    cd videoeditorportfolio
     npm install
 ```
 3. **Run the site**
