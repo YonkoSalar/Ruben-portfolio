@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause, faRedo } from "@fortawesome/free-solid-svg-icons";
@@ -12,6 +12,12 @@ function Project() {
     from: { opacity: 0, transform: "translate3d(-100%,0,0)" },
     to: { opacity: 1, transform: "translate3d(0%,0,0)" },
   });
+
+  const isMobile = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  };
 
   const handlePlayPause = () => {
     if (videoRef.current) {
@@ -54,18 +60,22 @@ function Project() {
 
       <animated.div
         style={fade}
-        className="relative flex justify-center items-center py-20"
+        className="relative flex justify-center items-center py-10"
       >
-        
         <video
           ref={videoRef}
-          className="w-2/3"
+          className="w-2/3 object-cover"
           onEnded={handleVideoEnd}
           onClick={handlePlayPause}
+          autoPlay={isMobile() ? false : true}
+          muted={isMobile() ? true : false}
+          // controls={isMobile() ? true : false}
+          poster="/black-screen-2.jpg" // Add this line
         >
           <source src="/Showreel2023_Ruben.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
         {(isVisible || !isPlaying) && (
           <div
             className="absolute inset-0 flex justify-center items-center bg-opacity-50 cursor-pointer"
