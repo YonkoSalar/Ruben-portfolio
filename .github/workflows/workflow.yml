@@ -10,9 +10,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # Changed from '14' to '16'
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RUBEN_PORTOFLIO }}'
+          node-version: '16.13.0' # This is where you specify the version of Node.js to use
 
       - name: Cache dependencies
         uses: actions/cache@v3
@@ -21,16 +19,15 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
+        
       - name: Install Dependencies
         run: npm install
-
+        
       - name: Build
         run: npm run build
-
+      
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+        
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@v1.5.0
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
