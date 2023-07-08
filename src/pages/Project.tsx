@@ -53,24 +53,25 @@ function Project() {
   };
 
   return (
-    <div className="w-full items-center justify-items-center bg-white">
-      <h1 className="mb-4 pt-20 text-4xl font-extrabold underline decoration-purple-500 leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
-        Showreel
-      </h1>
-
+    <div className="w-full h-screen bg-white flex flex-col justify-center items-center">
       <animated.div
         style={fade}
-        className="relative flex justify-center items-center py-10"
+        className={`relative w-full h-full ${
+          isMobile()
+            ? "flex justify-center"
+            : "flex justify-center items-center "
+        }`}
       >
         <video
           ref={videoRef}
-          className="w-2/3 object-cover"
+          className={`${
+            isMobile() ? "w-2/3" : "w-full h-full"
+          } object-cover`}
           onEnded={handleVideoEnd}
           onClick={handlePlayPause}
           autoPlay={isMobile() ? false : true}
           muted={isMobile() ? true : false}
-          // controls={isMobile() ? true : false}
-          poster="/black-screen-2.jpg" // Add this line
+          poster="/black-screen-2.jpg"
         >
           <source src="/Showreel2023_Ruben.mp4" type="video/mp4" />
           Your browser does not support the video tag.
