@@ -8,10 +8,7 @@ function Project() {
   const [isVisible, setVisible] = useState(true);
   const [hasEnded, setEnded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const fade = useSpring({
-    from: { opacity: 0, transform: "translate3d(-100%,0,0)" },
-    to: { opacity: 1, transform: "translate3d(0%,0,0)" },
-  });
+
 
   const isMobile = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -52,10 +49,22 @@ function Project() {
     setEnded(true);
   };
 
+  const toggleFullScreen = () => {
+    if (videoRef.current) {
+      if (!document.fullscreenElement) {
+        videoRef.current.requestFullscreen().catch(err => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+};
+
+
   return (
     <div className="w-full h-screen bg-white flex flex-col justify-center items-center">
-      <animated.div
-        style={fade}
+      <div
         className={`relative w-full h-full ${
           isMobile()
             ? "flex justify-center"
@@ -70,6 +79,7 @@ function Project() {
           autoPlay={isMobile() ? false : true}
           muted={isMobile() ? true : false}
           poster="/white_bg.jpg"
+          controls
         >
           <source src="/Showreel2023_Ruben.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -93,7 +103,7 @@ function Project() {
             </button>
           </div>
         )}
-      </animated.div>
+      </div>
     </div>
   );
 }
