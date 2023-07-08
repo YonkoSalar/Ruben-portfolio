@@ -6,14 +6,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # You can specify a version number to use.
+          node-version: '16' # Changed from '14' to '16'
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RUBEN_PORTOFLIO }}'
-      
+
       - name: Cache dependencies
         uses: actions/cache@v3
         with:
@@ -21,13 +21,13 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-        
+
       - name: Install Dependencies
         run: npm install
-        
+
       - name: Build
         run: npm run build
-      
+
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@v1.5.0
         with:
