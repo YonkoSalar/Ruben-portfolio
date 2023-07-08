@@ -26,7 +26,7 @@ function Home() {
         <div className="">
           <img
             src="/ruben-transformed.png"
-            alt="Image of George"
+            alt="George"
             className="filter drop-shadow-xl"
           />
         </div>
