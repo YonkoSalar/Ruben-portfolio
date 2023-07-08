@@ -24,7 +24,7 @@ jobs:
         run: npm install
         
       - name: Build Tailwind CSS
-        run: npx tailwindcss build -o output.css # Modify this command according to your build process
+        run: npx tailwindcss build -o build/css/output.css # Modify this command according to your build process
         
       - name: Build
         run: npm run build
