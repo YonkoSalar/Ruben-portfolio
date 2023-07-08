@@ -15,7 +15,7 @@ function Home() {
       <animated.div style={fade} className=" flex flex-col justify-center p-4 ">
         <h1 className="font-extrabold text-white text-2xl md:text-3xl lg:text-4xl">Ruben Nicolaysen Pedersen</h1>
         <hr className="my-4 mx-auto w-2/3 md:w-full"></hr>
-        <h2 className="text-xl font-semibold text-white md:text-2xl ">Creative Director / Editor</h2>
+        <h2 className="text-xl font-semibold text-white md:text-2xl ">Creativeee Director / Editor</h2>
         <div className="flex flex-row space-x-6  pt-2 md:items-center justify-center">
           <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
           <FontAwesomeIcon icon={faLinkedin} color="white" size="2x" />
