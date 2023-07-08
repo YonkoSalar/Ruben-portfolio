@@ -11,6 +11,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14' # You can specify a version number to use.
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RUBEN_PORTOFLIO }}'
       
       - name: Cache dependencies
         uses: actions/cache@v3
