@@ -14,6 +14,7 @@ This repository hosts the portfolio project for a skilled video editor. It's des
 
 ```bash
     git clone https://github.com/YonkoSalar/Ruben-portfolio
+
 ```
 
 2. **Install dependencies**
@@ -22,6 +23,8 @@ Navigate into the site’s directory and install the necessary packages.
 
 ```bash
     cd Ruben-portfolio
+=======
+    cd videoeditorportfolio
     npm install
 ```
 3. **Run the site**
