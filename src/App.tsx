@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import Timeline from "./pages/Timeline";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
 
       <div id="projects">
         <Project />
+      </div>
+
+      <div id="timeline">
+        <Timeline />
       </div>
 
       <div id="contact">

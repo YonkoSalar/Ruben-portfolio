@@ -78,6 +78,7 @@ function Header() {
             </div>
             <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("home")}>Home</li>
             <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("projects")}>Projects</li>
+            <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("timeline")}>Timeline</li>
             <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("contact")}>Contact</li>
           </ul>
         </div>
