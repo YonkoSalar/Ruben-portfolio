@@ -13,18 +13,37 @@ import ReactGA from "react-ga";
 function App() {
 
 
-  useEffect(() => {
-    // Initialize Google Analytics
-    ReactGA.initialize('G-E1B1ZK5K1H'); // Use your actual tracking ID here
+  // useEffect(() => {
+  //   // Initialize Google Analytics
+  //   ReactGA.initialize('G-E1B1ZK5K1H'); // Use your actual tracking ID here
 
-    // Record a pageview for this page
-    ReactGA.pageview(window.location.pathname + window.location.search);
+  //   // Record a pageview for this page
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
 
-  }, []); // The empty array means this useEffect will run once when the component mounts
+  // }, []); // The empty array means this useEffect will run once when the component mounts
 
   return (
     <div className="App">
+
+      
       <Header />
+
+      <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-E1B1ZK5K1H`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E1B1ZK5K1H', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
 
       <div id="home">
         <Home />
