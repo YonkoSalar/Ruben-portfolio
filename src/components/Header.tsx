@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <nav className="sticky bg-white z-10 px-8 md:flex-row">
+    <nav className="sticky bg-black z-10 px-8 md:flex-row">
       <div className="flex flex-row justify-between items-center py-4">
         <div>
           <p className="text-2xl font-proxima font-semibold text-black">
@@ -54,7 +54,7 @@ function Header() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className="h-6 w-6 text-black"
+                className="h-6 w-6 text-white"
               >
                 <path
                   strokeLinecap="round"
@@ -72,14 +72,14 @@ function Header() {
             isOpen ? "flex justify-center" : "hidden justify-end"
           } fixed top-0 left-0 w-screen h-screen md:h-auto bg-white z-20 transform transition-transform ease-in-out duration-300 md:relative md:translate-x-0 md:bg-transparent md:flex`}
         >
-          <ul className={`flex flex-col justify-center items-center h-full space-y-4 text-black text-md uppercase md:flex md:flex-row md:space-y-0 md:space-x-4 md:mt-0`}>
-            <div onClick={handleMenuClick} className="absolute top-5 right-5 cursor-pointer text-2xl md:hidden">
+          <ul className={`flex flex-col justify-center items-center h-full space-y-4 text-white text-md uppercase md:flex md:flex-row md:space-y-0 md:space-x-4 md:mt-0`}>
+            <div onClick={handleMenuClick} className="absolute text-black top-5 right-5 cursor-pointer text-2xl md:hidden">
               X
             </div>
-            <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("home")}>Home</li>
-            <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("projects")}>Projects</li>
-            <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("timeline")}>Timeline</li>
-            <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("contact")}>Contact</li>
+            {/* <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("home")}>Home</li> */}
+            <li className="text-black md:text-white cursor-pointer md:py-2" onClick={() => scrollToSection("projects")}>Reel</li>
+            <li className="text-black md:text-white cursor-pointer md:py-2" onClick={() => scrollToSection("timeline")}>Portfolio</li>
+            <li className="text-black md:text-white cursor-pointer md:py-2" onClick={() => scrollToSection("contact")}>Contact</li>
           </ul>
         </div>
       </div>

@@ -30,7 +30,7 @@ const companyEvents: CompanyEvent[] = [
           {
             customer: "CGI",
             title:
-              "SoMe films with Meteorological Institute, CGI's Talent Program, the new web filter solution for Osloskolen and senior Interviews for CGI",
+              "Social media advertisements with Meteorological Institute, CGI's Talent Program, the new web filter solution for Osloskolen and senior Interviews for CGI",
             description: "",
           },
           {
@@ -53,7 +53,7 @@ const companyEvents: CompanyEvent[] = [
           {
             customer: "Norisma",
             title:
-              "Various TV advertisements, SoMe advertisements for their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White",
+              "Various TV advertisements, Social media advertisements for their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White",
             description: "",
           },
           {
@@ -68,60 +68,60 @@ const companyEvents: CompanyEvent[] = [
         customers: [
           {
             customer: "CGI",
-            title: "Annual tour 2023 Webinar og Seminar",
+            title: "Annual Tour 2023 Webinar and Seminar",
             description: "",
           },
           {
             customer: "CGI",
-            title: "Diverse Innslag til Annual tour 2023",
+            title: "Segments for Annual Tour 2023",
             description: "",
           },
           {
             customer: "Daikin",
             title:
-              "Diverse varmepumpe reklamer. Blant annet en studio shoot med Otto Robsahm og Mads Østberg og andre reklamer med Mads Østberg og Stig André Berge.",
+              "Heat pump advertisements. Including a studio shoot with Otto Robsahm and Mads Østberg, and several other Advertisements with Mads Østberg and Stig André Berge.",
             description: "",
           },
           {
             customer: "ManpowerGroup",
             title:
-              "Diverse SoMe reklamer og eventfilmer for manpowerGroup konsernet. Det innebærer Manpower, Experis, Talent Solution og Jefferson Wells",
+              "Social media advertisements and Event films for ManpowerGroup. Including Manpower, Experis, Talent Solution, and Jefferson Wells.",
             description: "",
           },
           {
             customer: "Elektroskandia Nordic Fiber",
-            title: "SoMe Reklamer",
+            title: "Social media advertisements",
             description: "",
           },
           {
             customer: "Elkem Salten",
-            title: "Film til Nettside",
+            title: "Advertisment",
             description: "",
           },
           {
             customer: "Møller Logistikk",
-            title: "Rekrutteringsfilmer",
+            title: "Recruitment films",
             description: "",
           },
           {
             customer: "Norisma",
             title:
-              "Diverse reklamer og filmer for produktene Betakaroten Premium, Coffee Zero, Tea Zero og Premium White.",
+              "Various TV advertisements, Social media advertisements for their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White",
             description: "",
           },
           {
             customer: "Postnord Strålfors",
-            title: "Filmer til konferanse",
+            title: "Films for a conference",
             description: "",
           },
           {
             customer: "Skynova",
-            title: "Stock filmer med Voice over.",
+            title: "Stock footage advertisments with Voice Over.",
             description: "",
           },
           {
             customer: "Svea",
-            title: "Reklamekampanje med Magnus Devold",
+            title: "Ad-campaign with Magnus Devold",
             description: "",
           },
         ],
@@ -196,7 +196,7 @@ function Timeline() {
         <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
           <div className="w-full max-w-3xl mx-auto">
             <h1 className=" pb-8 mb-4 text-3xl font-extrabold underline decoration-purple-800 leading-none tracking-tight md:text-3xl lg:text-6xl text-black">
-              Timeline
+            Portfolio
             </h1>
             <div className="relative">
               {/* <!-- Timeline Line --> */}
