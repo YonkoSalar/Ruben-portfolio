@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import Timeline from "./pages/Timeline";
-import ReactGA from "react-ga";
+// import ReactGA from "react-ga";
 
 
 
