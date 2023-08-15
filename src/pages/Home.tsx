@@ -21,10 +21,14 @@ function Home() {
           Creative Director / Editor
         </h2>
         <div className="flex flex-row space-x-6  pt-2 md:items-center justify-center">
-          <FontAwesomeIcon icon={faLinkedin} color="white" size="2x" />
-          <FontAwesomeIcon icon={faEnvelope} color="white" size="2x" />{" "}
+          <a href="https://www.linkedin.com/in/ruben-nicolaysen-pedersen/">
+            <FontAwesomeIcon icon={faLinkedin} color="white" size="2x" />
+          </a>
+          <a href="mailto:ruben.nicolaysen.pedersen@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} color="white" size="2x" />
+          </a>{" "}
           <a
-            href="/letter-r.png"
+            href="https://docs.google.com/document/d/1TH4gFknJ5ojMl1Oeir3Mv6OyJHeSSSRiqQGjBTfD1h8/edit?usp=sharing            "
             className="text-white hover:text-blue-200 transition duration-150 ease-in-out"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
