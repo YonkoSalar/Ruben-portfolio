@@ -221,7 +221,7 @@ function Timeline() {
                     {companyEvent.years.map((yearEvent, yearIndex) => (
                       <div key={yearIndex}>
                         {yearEvent.year && (
-                          <time className="text-center block px-4 text-emerald-600 bg-emerald-100 rounded-full w-28 mx-auto">
+                          <time className="text-center block px-4 text-emerald-600 bg-emerald-100 rounded-full w-28 mx-auto my-4">
                             {yearEvent.year}
                           </time>
                         )}
