@@ -17,6 +17,17 @@ type TimelineEvent = {
 
 const companyEvents: CompanyEvent[] = [
   {
+    companyName: "ITV Studios Norge",
+    years: [
+      {
+        year: "2023-2024",
+        customers: [
+          { customer: "The Voice", title: "Season 9", description: "" },
+        ],
+      },
+    ],
+  },
+  {
     companyName: "Skråblikk AS",
     years: [
       {
@@ -135,12 +146,6 @@ const companyEvents: CompanyEvent[] = [
         year: "2021-2022",
         customers: [
           { customer: "The Voice", title: "Season 7", description: "" },
-        ],
-      },
-      {
-        year: "2023-2024",
-        customers: [
-          { customer: "The Voice", title: "Season 9", description: "" },
         ],
       },
     ],
