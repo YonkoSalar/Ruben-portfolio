@@ -11,7 +11,17 @@ function Home() {
   });
 
   return (
-    <div className="flex flex-row flex-wrap-reverse justify-center items-center sm:h-screen bg-black overflow-hidden pb-10">
+    <div className="flex flex-row flex-wrap justify-center items-center sm:h-screen bg-black overflow-hidden pb-10">
+       <animated.div style={fade} className=" flex justify-center relative px-20">
+        <div className="">
+          <img
+            src="/ruben-looking-away.png"
+            alt="George"
+            className="filter drop-shadow-xl"
+          />
+        </div>
+        <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent"></div>
+      </animated.div>
       <animated.div style={fade} className=" flex flex-col justify-center p-4 ">
         <h1 className="font-extrabold text-white text-2xl md:text-3xl lg:text-4xl">
           Ruben Nicolaysen Pedersen
@@ -50,16 +60,7 @@ function Home() {
           </a>
         </div>
       </animated.div>
-      <animated.div style={fade} className=" flex justify-center relative">
-        <div className="">
-          <img
-            src="/ruben-transformed.png"
-            alt="George"
-            className="filter drop-shadow-xl"
-          />
-        </div>
-        <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent"></div>
-      </animated.div>
+     
     </div>
   );
 }

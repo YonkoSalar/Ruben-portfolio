@@ -1,4 +1,6 @@
 import React from "react";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type CompanyEvent = {
   companyName: string;
@@ -12,17 +14,40 @@ type TimelineEvent = {
   customer: string;
   title: string;
   description: string;
+  url: string;
   subcategories?: string[];
 };
 
 const companyEvents: CompanyEvent[] = [
   {
+    companyName: "Warner Music Norway",
+    years: [
+      {
+        year: "2024",
+        customers: [
+          { customer: "Yasir Moa", title: "Kron", description: "Promotional content for EP release. Worked as editor, director and photography.", url: "https://www.instagram.com/reel/C2LQ7cMqvOY/?igsh=MWZubDVqMGY2Mm9teg==" },
+        ],
+      },
+    ],
+  },
+  {
     companyName: "ITV Studios Norge",
     years: [
       {
-        year: "2023-2024",
+        year: "2024",
         customers: [
-          { customer: "The Voice", title: "Season 9", description: "" },
+          { customer: "The Voice", title: "Season 9", description: "Editor for Blind auditions, Duel and Knockouts.",  url: "https://www.youtube.com/watch?v=rZp_xhay120" },
+        ],
+      },
+    ],
+  },
+  {
+    companyName: "Odeon Kino",
+    years: [
+      {
+        year: "2023",
+        customers: [
+          { customer: "Odeon Kino", title: "SoMe Premiere Promo", description: "",  url: "https://www.instagram.com/reel/CupD1y1g6GQ/?igsh=cHVmY2U5N2MxMm9o" },
         ],
       },
     ],
@@ -37,40 +62,47 @@ const companyEvents: CompanyEvent[] = [
             customer: "Evelon",
             title: "Employer Branding Film",
             description: "",
+            url: ""
           },
           {
             customer: "CGI",
             title:
-              "Social media advertisements with Meteorological Institute, CGI's Talent Program, the new web filter solution for Osloskolen and senior Interviews for CGI",
-            description: "",
+              "Social Media Advertisements",
+            description: "Working with Meteorological Institute, CGI's Talent Program, the new web filter solution for Osloskolen and senior Interviews for CGI.",
+            url: ""
           },
           {
             customer: "Daikin",
-            title: "Testimonial films and heat pump advertisements",
+            title: "Testimonial Films and Heat Pump Advertisements",
             description: "",
+            url: ""
           },
           {
             customer: "Fornybar Norge",
-            title: "Films for the PTK 2023 conference",
+            title: "Films for the PTK 2023 Conference",
             description: "",
+            url: ""
           },
           {
             customer: "Experis",
-            title: "Film for booth at a conference",
+            title: "Advertisment for Stand at a Conferance",
             description: "",
+            url: ""
           },
-          { customer: "Metos", title: "Recruitment films", description: "" },
-          { customer: "Nortura", title: "Recruitment films", description: "" },
+          { customer: "Metos", title: "Recruitment Films", description: "", url: "" },
+          { customer: "Nortura", title: "Recruitment Films", description: "", url: "" },
           {
             customer: "Norisma",
             title:
-              "Various TV advertisements, Social media advertisements for their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White",
-            description: "",
+              "TV Advertisements and Social Media Advertisements",
+            description: "For their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White.",
+            url: ""
           },
           {
             customer: "Workshop Bemanning",
             title: "Recruitment films",
             description: "",
+            url: ""
           },
         ],
       },
@@ -80,60 +112,65 @@ const companyEvents: CompanyEvent[] = [
           {
             customer: "CGI",
             title: "Annual Tour 2023 Webinar and Seminar",
-            description: "",
-          },
-          {
-            customer: "CGI",
-            title: "Segments for Annual Tour 2023",
-            description: "",
+            description: "Edited talking head presentation with the company's Annual report for the year. As well as segments in between slides.",
+            url: ""
           },
           {
             customer: "Daikin",
             title:
-              "Heat pump advertisements. Including a studio shoot with Otto Robsahm and Mads Østberg, and several other Advertisements with Mads Østberg and Stig André Berge.",
-            description: "",
+              "Heat Pump Advertisements",
+            description: "Including a studio shoot with Otto Robsahm and Mads Østberg, and several other Advertisements with Mads Østberg and Stig André Berge.",
+            url: ""
           },
           {
             customer: "ManpowerGroup",
             title:
-              "Social media advertisements and Event films for ManpowerGroup. Including Manpower, Experis, Talent Solution, and Jefferson Wells.",
-            description: "",
+              "Social Media Advertisements and Event Films",
+            description: "Including Manpower, Experis, Talent Solution, and Jefferson Wells.",
+              url: ""
           },
           {
             customer: "Elektroskandia Nordic Fiber",
-            title: "Social media advertisements",
+            title: "Social Media Advertisements",
             description: "",
+              url: ""
           },
           {
             customer: "Elkem Salten",
             title: "Advertisment",
             description: "",
+              url: ""
           },
           {
             customer: "Møller Logistikk",
             title: "Recruitment films",
             description: "",
+              url: ""
           },
           {
             customer: "Norisma",
             title:
-              "Various TV advertisements, Social media advertisements for their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White",
-            description: "",
+              "TV Advertisements and Social Media Advertisements",
+            description: "For their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White.",
+            url: ""
           },
           {
             customer: "Postnord Strålfors",
-            title: "Films for a conference",
+            title: "Multiple Films for a Conference",
             description: "",
+              url: ""
           },
           {
             customer: "Skynova",
-            title: "Stock footage advertisments with Voice Over.",
-            description: "",
+            title: " Advertisments ",
+            description: "Stock footage with Voice Over.",
+            url: ""
           },
           {
             customer: "Svea",
-            title: "Ad-campaign with Magnus Devold",
-            description: "",
+            title: "Ad-campaign",
+            description: "Documentary style video with Magnus Devold.",
+              url: ""
           },
         ],
       },
@@ -145,7 +182,7 @@ const companyEvents: CompanyEvent[] = [
       {
         year: "2021-2022",
         customers: [
-          { customer: "The Voice", title: "Season 7", description: "" },
+          { customer: "The Voice", title: "Season 7", description: "Editor for Blind auditions, Duel and Knockouts. ", url: "https://youtu.be/X3ruKFDmChY?si=b4eULSUZihkOyBEl" },
         ],
       },
     ],
@@ -156,7 +193,7 @@ const companyEvents: CompanyEvent[] = [
       {
         year: "2021",
         customers: [
-          { customer: "Gjett hvem", title: "Season 1", description: "" },
+          { customer: "Gjett hvem", title: "Season 1", description: "", url: "" },
         ],
       },
     ],
@@ -165,34 +202,38 @@ const companyEvents: CompanyEvent[] = [
     companyName: "Freelance and Various Assignments",
     years: [
       {
-        year: "2018-2021",
+        year: "2016-2021",
         customers: [
           {
             customer: "Hjem til jul",
             title: "Production Assistant",
             description: "",
+            url: ""
           },
-          { customer: "Férdi Film", title: "Internship", description: "" },
+          { customer: "Férdi Film", title: "Internship", description: "", url: "" },
           {
             customer:
               "Student assistant på Høyskolen Kristiania - Institutt for film og TV",
             title: "Promo Films, Technical Assistant, Editing Assistant",
             description: "",
+            url: ""
           },
-          { customer: "Gullruten 2021", title: "Jury Member", description: "" },
-          { customer: "NSKI", title: "Short Film", description: "" },
-          { customer: "Vevet", title: "Music Video", description: "" },
+          { customer: "Gullruten 2021", title: "Jury Member", description: "", url: "" },
+          { customer: "NSKI", title: "Short Film", description: "", url: "" },
+          { customer: "Vevet", title: "Music Video", description: "", url: ""},
           {
             customer: "Høyskolen Kristiania 2018",
             title:
-              "Fittefaen - Short Film (Bachelor), Glemt - Short Film, Sølvrygg - Short Film, Valkyrien - TV Series (School Assignment)",
-            description: "",
+              "School Projects",
+            description: "Fittefaen - Short Film (Bachelor), Glemt - Short Film, Sølvrygg - Short Film, Valkyrien - TV Series (School Assignment).",
+            url: ""
           },
           {
             customer: "Folkehøyskole 2016-2017",
             title:
-              "Wayho - Music Video, Various Humor Sketches, Various Fiction Projects",
-            description: "",
+              "School Projects",
+            description: "Wayho - Music Video, Various Humor Sketches, Various Fiction Projects",
+            url: ""
           },
         ],
       },
@@ -238,14 +279,22 @@ function Timeline() {
                               <div className="text-xl text-left text-slate-900">
                                 <span className="block transform">
                                   <span className="-skew-x-12 italic font-bold">
-                                    {event.customer}
+                                    {event.customer} - 
                                   </span>{" "}
-                                  - <span className=" ">{event.title}</span>
+                                  {event.url ? (
+                                    <a href={event.url} className="link-with-icon">
+                                      <span className="px-1">{event.title}</span>
+                                      <FontAwesomeIcon icon={faLink} color="black" size="xs" />
+                                    </a>
+                                  ) : (
+                                    <span className="">{event.title}</span>
+                                  )}
                                 </span>
                               </div>
                               <div className="text-slate-500 text-left">
                                 {event.description}
                               </div>
+
                             </div>
                           ))}
                         </div>
