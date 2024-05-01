@@ -6,8 +6,7 @@ function Project() {
       <div className="relative w-full h-full flex justify-center items-center">
         <iframe
           title="Projects"
-
-          src="https://drive.google.com/file/d/1KFB8PFdiaDoz_J2mTBUAirkiXtSdqYmO/preview"
+          src="https://www.youtube.com/embed/OIXhaZoq5iQ?si=YBFyRoLwqFUMFZLL&amp;controls=0"
           className="w-full h-full"
           allow="autoplay"
         ></iframe>
