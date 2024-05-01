@@ -137,7 +137,7 @@ const companyEvents: CompanyEvent[] = [
           },
           {
             customer: "Elkem Salten",
-            title: "Advertisment",
+            title: "Advertisments",
             description: "Editor.",
               url: ""
           },
