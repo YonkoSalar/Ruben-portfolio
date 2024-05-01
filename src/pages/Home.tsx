@@ -11,7 +11,7 @@ function Home() {
   });
 
   return (
-    <div className="flex flex-row flex-wrap justify-center items-center sm:h-screen bg-black overflow-hidden pb-10">
+    <div className="flex flex-row flex-wrap justify-center items-center h-screen bg-black overflow-hidden pb-10">
        <animated.div style={fade} className=" flex justify-center relative px-20">
         <div className="">
           <img

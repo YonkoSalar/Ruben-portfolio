@@ -36,7 +36,7 @@ const companyEvents: CompanyEvent[] = [
       {
         year: "2024",
         customers: [
-          { customer: "The Voice", title: "Season 9", description: "Editor for Blind auditions, Duel and Knockouts.",  url: "https://www.youtube.com/watch?v=rZp_xhay120" },
+          { customer: "The Voice", title: "Season 9", description: "Editor for Blind auditions, Duel and Knockouts. ",  url: "https://www.youtube.com/watch?v=rZp_xhay120" },
         ],
       },
     ],
@@ -47,7 +47,7 @@ const companyEvents: CompanyEvent[] = [
       {
         year: "2023",
         customers: [
-          { customer: "Odeon Kino", title: "SoMe Premiere Promo", description: "",  url: "https://www.instagram.com/reel/CupD1y1g6GQ/?igsh=cHVmY2U5N2MxMm9o" },
+          { customer: "Odeon Kino", title: "Mission Impossible 7 Premiere Promotion", description: "Editor for a social media promotion.",  url: "https://www.instagram.com/reel/CupD1y1g6GQ/?igsh=cHVmY2U5N2MxMm9o" },
         ],
       },
     ],
@@ -61,47 +61,47 @@ const companyEvents: CompanyEvent[] = [
           {
             customer: "Evelon",
             title: "Employer Branding Film",
-            description: "",
+            description: "Editor as well as on-set work.",
             url: ""
           },
           {
             customer: "CGI",
             title:
               "Social Media Advertisements",
-            description: "Working with Meteorological Institute, CGI's Talent Program, the new web filter solution for Osloskolen and senior Interviews for CGI.",
+            description: "Edited videos including Meteorological Institute, CGI's Talent Program, Osloskolen and senior Interviews for CGI.",
             url: ""
           },
           {
             customer: "Daikin",
             title: "Testimonial Films and Heat Pump Advertisements",
-            description: "",
-            url: ""
+            description: "Editor and on-set work.",
+            url: "https://www.facebook.com/watch/?v=3039536746350029"
           },
           {
             customer: "Fornybar Norge",
             title: "Films for the PTK 2023 Conference",
-            description: "",
+            description: "Editor and on-set work.",
             url: ""
           },
           {
             customer: "Experis",
             title: "Advertisment for Stand at a Conferance",
-            description: "",
+            description: "Editor.",
             url: ""
           },
-          { customer: "Metos", title: "Recruitment Films", description: "", url: "" },
-          { customer: "Nortura", title: "Recruitment Films", description: "", url: "" },
+          { customer: "Metos", title: "Recruitment Films", description: "Editor.", url: "" },
+          { customer: "Nortura", title: "Recruitment Films", description: "Editor.", url: "" },
           {
             customer: "Norisma",
             title:
               "TV Advertisements and Social Media Advertisements",
-            description: "For their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White.",
-            url: ""
+            description: "Editor and on-set work for their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White.",
+            url: "https://premiumwhite.no/bruksanvisning"
           },
           {
             customer: "Workshop Bemanning",
             title: "Recruitment films",
-            description: "",
+            description: "Editor.",
             url: ""
           },
         ],
@@ -119,58 +119,58 @@ const companyEvents: CompanyEvent[] = [
             customer: "Daikin",
             title:
               "Heat Pump Advertisements",
-            description: "Including a studio shoot with Otto Robsahm and Mads Østberg, and several other Advertisements with Mads Østberg and Stig André Berge.",
-            url: ""
+            description: "Editor and on-set work for a studio shoot with Otto Robsahm and Mads Østberg, and several other Advertisements with Mads Østberg and Stig André Berge.",
+            url: "https://www.facebook.com/DaikinNorway/videos/595452595497698"
           },
           {
             customer: "ManpowerGroup",
             title:
               "Social Media Advertisements and Event Films",
-            description: "Including Manpower, Experis, Talent Solution, and Jefferson Wells.",
-              url: ""
+            description: "Editor for Manpower, Experis, Talent Solution, and Jefferson Wells.",
+              url: "https://www.facebook.com/watch/?v=938925483937305"
           },
           {
             customer: "Elektroskandia Nordic Fiber",
             title: "Social Media Advertisements",
-            description: "",
+            description: "Editor.",
               url: ""
           },
           {
             customer: "Elkem Salten",
             title: "Advertisment",
-            description: "",
+            description: "Editor.",
               url: ""
           },
           {
             customer: "Møller Logistikk",
             title: "Recruitment films",
-            description: "",
+            description: "Editor and on-set work.",
               url: ""
           },
           {
             customer: "Norisma",
             title:
               "TV Advertisements and Social Media Advertisements",
-            description: "For their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White.",
+            description: "Editor and on-set work for their products: Betakaroten Premium, Coffee Zero, Tea Zero, and Premium White.",
             url: ""
           },
           {
             customer: "Postnord Strålfors",
             title: "Multiple Films for a Conference",
-            description: "",
+            description: "Editor and on-set work.",
               url: ""
           },
           {
             customer: "Skynova",
-            title: " Advertisments ",
-            description: "Stock footage with Voice Over.",
+            title: "Stock Footage Advertisement with Voice Over",
+            description: "Editor",
             url: ""
           },
           {
             customer: "Svea",
-            title: "Ad-campaign",
-            description: "Documentary style video with Magnus Devold.",
-              url: ""
+            title: "Ad-campaign with Magnus Devold",
+            description: "Editor and on-set work.",
+              url: "https://www.youtube.com/watch?v=8HU6CRSDlnU&feature=youtu.be"
           },
         ],
       },
@@ -193,7 +193,7 @@ const companyEvents: CompanyEvent[] = [
       {
         year: "2021",
         customers: [
-          { customer: "Gjett hvem", title: "Season 1", description: "", url: "" },
+          { customer: "Gjett hvem", title: "Season 1", description: "Rough cut editor.", url: "https://www.youtube.com/watch?v=R3MyspIdVro&feature=youtu.be" },
         ],
       },
     ],
@@ -208,19 +208,19 @@ const companyEvents: CompanyEvent[] = [
             customer: "Hjem til jul",
             title: "Production Assistant",
             description: "",
-            url: ""
+            url: "https://www.youtube.com/watch?v=MB-onpdR56E&feature=youtu.be"
           },
-          { customer: "Férdi Film", title: "Internship", description: "", url: "" },
+          { customer: "Férdi Film", title: "Internship", description: "Editor and on-set work.", url: "" },
           {
             customer:
-              "Student assistant på Høyskolen Kristiania - Institutt for film og TV",
-            title: "Promo Films, Technical Assistant, Editing Assistant",
-            description: "",
+              "Høyskolen Kristiania",
+            title: "Student assistant",
+            description: "Promo Films, Technical Assistant, Editing Assistant.",
             url: ""
           },
-          { customer: "Gullruten 2021", title: "Jury Member", description: "", url: "" },
-          { customer: "NSKI", title: "Short Film", description: "", url: "" },
-          { customer: "Vevet", title: "Music Video", description: "", url: ""},
+          { customer: "Gullruten 2021", title: " Award for Best TV-Entertainment", description: "Jury Member.", url: "" },
+          { customer: "NSKI", title: "Short Film", description: "Editor.", url: "" },
+          { customer: "Vevet", title: "Music Video", description: "Producer, director and editor.", url: ""},
           {
             customer: "Høyskolen Kristiania 2018",
             title:

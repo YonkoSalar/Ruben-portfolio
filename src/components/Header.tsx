@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <nav className="sticky bg-black z-10 px-8 md:flex-row">
+    <nav className="sticky top-0 bg-black z-10 px-8 md:flex-row">
       <div className="flex flex-row justify-between items-center py-4">
         <div>
           <p className="text-2xl font-proxima font-semibold text-black">
@@ -76,7 +76,7 @@ function Header() {
             <div onClick={handleMenuClick} className="absolute text-black top-5 right-5 cursor-pointer text-2xl md:hidden">
               X
             </div>
-            {/* <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("home")}>Home</li> */}
+            <li className="cursor-pointer md:py-2" onClick={() => scrollToSection("home")}>Home</li>
             <li className="text-black md:text-white cursor-pointer md:py-2" onClick={() => scrollToSection("projects")}>Reel</li>
             <li className="text-black md:text-white cursor-pointer md:py-2" onClick={() => scrollToSection("timeline")}>Portfolio</li>
             <li className="text-black md:text-white cursor-pointer md:py-2" onClick={() => scrollToSection("contact")}>Contact</li>
