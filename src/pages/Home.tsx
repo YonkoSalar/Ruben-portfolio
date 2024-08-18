@@ -59,8 +59,17 @@ function Home() {
             </svg>
           </a>
         </div>
+       <div className="flex justify-center items-center pt-4">
+        <a href="https://www.youtube.com/watch?v=TlqRMjk37nw" target="_blank" rel="noopener noreferrer">
+          <div className="p-4 max-w-xs bg-white rounded-full text-center cursor-pointer transform transition duration-500 hover:scale-105">
+            <h2 className="text-sm font-semibold text-black md:text-xl flex items-center justify-center">
+              <img src="/clapper-board-joypixels.gif" alt="Video Pitch" className="inline-block w-6 h-6 mr-2 -mt-2" />
+              Click Here for Video Pitch
+            </h2>
+          </div>
+        </a>
+      </div>
       </animated.div>
-     
     </div>
   );
 }
