@@ -20,6 +20,28 @@ type TimelineEvent = {
 
 const companyEvents: CompanyEvent[] = [
   {
+    companyName: "ITV Studios Norge",
+    years: [
+      {
+        year: "2025",
+        customers: [
+          { customer: "The Voice", title: "Season 10", description: "Editor for Blind auditions, Duel and Knockouts. ",  url: "" },
+        ],
+      },
+    ],
+  },
+  {
+    companyName: "Red Ant",
+    years: [
+      {
+        year: "2024",
+        customers: [
+          { customer: "Red Ant", title: "Freelance Editor", description: "Freelance Editor on commercial work and corporate videos.", url: "" },
+        ],
+      },
+    ],
+  },
+  {
     companyName: "Warner Music Norway",
     years: [
       {
