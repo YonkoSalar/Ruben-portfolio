@@ -20,22 +20,68 @@ type TimelineEvent = {
 
 const companyEvents: CompanyEvent[] = [
   {
-    companyName: "ITV Studios Norge",
+    companyName: "Red Ant",
     years: [
       {
-        year: "2025",
+        year: "2026",
         customers: [
-          { customer: "The Voice", title: "Season 10", description: "Editor for Blind auditions, Duel and Knockouts. ",  url: "" },
+          { customer: "Red Ant", title: "Lead Editor", description: "Temporary Position", url: ""},
         ],
       },
     ],
   },
+
+
+  {
+    companyName: "ITV Studios Norge",
+    years: [
+      {
+        year: "2026",
+        customers: [
+          { customer: "The Voice", title: "Season 11", description: "Editor for Blind auditions, Duel and Knockouts. ",  url: "" },
+        ],
+      },
+
+      {
+        year: "2025",
+        customers: [
+          { customer: "I Kissed a Boy", title: "Season 1", description: "Editor",  url: "" },
+          { customer: "The Voice", title: "Season 10", description: "Editor for Blind auditions, Duels, Knockouts and Live. ",  url: "" },
+        ],
+      },
+    ],
+  },
+    {
+    companyName: "Mastiff",
+    years: [
+      {
+        year: "2025",
+        customers: [
+          { customer: "Vokteren", title: "Season 2", description: "Storyline editor",  url: "" },
+        ],
+      },
+    ],
+  },
+  
   {
     companyName: "Red Ant",
     years: [
       {
+        year: "2025",
+        customers: [
+          { customer: "Red ant", title: "Commercial Work", description: "Freelance Editor", url: ""},
+          { customer: "Historical Museum", title: "Exhibition Film", description: "Freelance Editor",  url: "" },
+          { customer: "The Norwgian Public Roads administration", title: "Commercial Work", description: "Freelance Editor",  url: "" },
+          { customer: "Atea", title: "Commercial Work", description: "Freelance Editor",  url: "" },
+          { customer: "Radio Player", title: "Commercial Work", description: "Freelance Editor",  url: "" },
+        ],
+      },
+
+      {
         year: "2024",
         customers: [
+          { customer: "Norwegian Directorate for Higher Education and Skills", title: "Commercial Work", description: "Freelance Editor", url: ""},
+          { customer: "The Norwgian Public Roads administration", title: "Commercial Work", description: "Freelance Editor",  url: "" },
           { customer: "Red Ant", title: "Freelance Editor", description: "Freelance Editor on commercial work and corporate videos.", url: "" },
         ],
       },
