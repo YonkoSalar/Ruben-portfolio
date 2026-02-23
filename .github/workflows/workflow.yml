@@ -25,9 +25,12 @@ jobs:
         
       - name: Build
         run: npm run build
-      
+
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools@12.5.1
+        run: |
+          echo $GOOGLE_SERVICE_ACCOUNT > service-account.json
+          export GOOGLE_APPLICATION_CREDENTIALS="service-account.json"
+          npm install -g firebase-tools
         
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
+        run: firebase deploy
