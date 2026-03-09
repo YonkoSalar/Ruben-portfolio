@@ -38,7 +38,7 @@ function Home() {
             <FontAwesomeIcon icon={faEnvelope} color="white" size="2x" />
           </a>{" "}
           <a
-            href="https://docs.google.com/document/d/1TH4gFknJ5ojMl1Oeir3Mv6OyJHeSSSRiqQGjBTfD1h8/edit?usp=sharing            "
+            href="https://drive.google.com/file/d/1clyHe11fmrRi8-kPUpTwy8Uz5QF8BO6k/view"
             className="text-white hover:text-blue-200 transition duration-150 ease-in-out"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
